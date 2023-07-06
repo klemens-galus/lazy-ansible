@@ -1,24 +1,20 @@
 FROM ubuntu:23.10
 
-RUN useradd -m ansible
+RUN mkdir /root/.ssh
 
-RUN mkdir /home/ansible/.ssh
-
-VOLUME /home/ansible/lazy-ansible
-VOLUME /home/ansible/.ssh
+VOLUME /root/lazy-ansible
+VOLUME /root/.ssh
 
 RUN apt update && \
     apt install -y ansible 
 
-COPY ./docker-entrypoint.sh /usr/bin/docker-entrypoint.sh
+COPY ./docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
-RUN chmod +x /usr/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
-USER ansible
-
-CMD ["bash"]
+CMD ["cd ~/lazy-ansible"]
 
 
     
