@@ -14,8 +14,6 @@ COPY ./docker-entrypoint.sh /usr/bin/docker-entrypoint.sh
 
 RUN chmod +x /usr/bin/docker-entrypoint.sh
 
-RUN touch /home/ansible/welcomeToLazyAnsible.md
-
 ENTRYPOINT ["docker-entrypoint.sh"]
 
 USER ansible
