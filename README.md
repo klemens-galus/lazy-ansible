@@ -26,7 +26,7 @@ Lazy-ansible is a fast way to run ansible without installing it !
 ## How to run it !
 
 ```
-docker run -it -v <ssh folder>:/root/.ssh -v <ansible project folder>:/root/lazy-ansible test bash
+docker run -it -v <ssh folder>:/root/.ssh -v <ansible project folder>:/root/lazy-ansible docker.io/klemensgalus/lazy-ansible:<tag> bash
 ```
 
 ### SSH folder
