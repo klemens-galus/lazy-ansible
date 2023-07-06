@@ -1,7 +1,10 @@
 #!bin/bash
 
-cd /home/ansible/lazy-ansible
+chmod 700 ~/.ssh
+chown root:root ~/.ssh
+chmod 600 ~/.ssh/*
+chown root:root ~/.ssh/*
 
-echo "Welcome to lazy-ansible v:$SOURCEREF" >> /home/ansible/welcomeToLazyAnsible.md 
+cd ~/lazy-ansible
 
 exec "$@"
