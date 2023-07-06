@@ -1,4 +1,4 @@
-# Welcome to lazy-ansible
+# Welcome to lazy-ansible !
 
 ## Quick reference
 
