@@ -16,7 +16,7 @@ RUN touch /home/ansible/lazy-ansible-$SOURCEREF.md
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
-CMD ["cd ~/lazy-ansible"]
+CMD ["bash"]
 
 
     
