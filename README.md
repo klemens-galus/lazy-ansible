@@ -2,20 +2,20 @@
 
 ## Quick reference
 
--   **Maintained by**
+-   **Maintained by**  
     [Me : Klemens](https://gitlab.com/Klemens_Galus)
 You need a ssh folder with your ssh key.s ans a config file 
 
-## Supported release tags
+## Supported release tags  
 i don't recommend to use [latest](https://github.com/klemens-galus/lazy-ansible) because it correspond to my last push on master (Always fix your version with a tag) ! 
 - [1.0.2](https://github.com/klemens-galus/lazy-ansible/tree/1.0.2)
 
 ## Supported beta tags
-**No beta for the moment**
+**No beta for the moment**  
 
 ## Quick reference (cont.)
 
-**An issue ?**
+**An issue ?**  
 [https://github.com/klemens-galus/lazy-ansible/issues](https://github.com/klemens-galus/lazy-ansible/issues)
 
 ## What is lazy-ansible
@@ -31,9 +31,10 @@ docker run -it -v <ssh folder>:/root/.ssh -v <ansible project folder>:/root/lazy
 
 ### SSH folder
 Your ssh folder need to look at this 
-- config
-- publickey.pub
-- privatekey
+--
+  |-config
+  |-publickey.pub
+  |-privatekey
 
 In your config 
 ```
