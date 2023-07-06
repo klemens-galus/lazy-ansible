@@ -12,8 +12,6 @@ COPY ./docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
-RUN touch /home/ansible/lazy-ansible-$SOURCEREF.md
-
 ENTRYPOINT ["docker-entrypoint.sh"]
 
 CMD ["bash"]
