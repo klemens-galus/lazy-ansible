@@ -7,9 +7,10 @@
 You need a ssh folder with your ssh key.s ans a config file 
 
 ## Supported release tags  
-- [1.0.2](https://github.com/klemens-galus/lazy-ansible/tree/1.0.2)
-- [1.0.3](https://github.com/klemens-galus/lazy-ansible/tree/1.0.3)
 - [1.0.4](https://github.com/klemens-galus/lazy-ansible/tree/1.0.4)
+- [1.0.3](https://github.com/klemens-galus/lazy-ansible/tree/1.0.3)
+- [1.0.2](https://github.com/klemens-galus/lazy-ansible/tree/1.0.2)
+
 
 ## Supported beta tags
 **No beta for the moment**  
