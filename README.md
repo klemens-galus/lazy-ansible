@@ -9,6 +9,7 @@ You need a ssh folder with your ssh key.s ans a config file
 ## Supported release tags  
 i don't recommend to use [latest](https://github.com/klemens-galus/lazy-ansible) because it correspond to my last push on master (Always fix your version with a tag) ! 
 - [1.0.2](https://github.com/klemens-galus/lazy-ansible/tree/1.0.2)
+- [1.0.3](https://github.com/klemens-galus/lazy-ansible/tree/1.0.3)
 
 ## Supported beta tags
 **No beta for the moment**  
@@ -26,7 +27,7 @@ Lazy-ansible is a fast way to run ansible without installing it !
 ## How to run it !
 
 ```
-docker run -it -v <ssh folder>:/root/.ssh -v <ansible project folder>:/root/lazy-ansible docker.io/klemensgalus/lazy-ansible:<tag> bash
+docker run -it -v <ssh folder>:/home/ansible/.ssh -v <ansible project folder>:/home/ansible/lazy-ansible docker.io/klemensgalus/lazy-ansible:<tag> bash
 ```
 
 ### SSH folder
