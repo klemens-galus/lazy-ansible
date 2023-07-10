@@ -1,6 +1,6 @@
 image: docker:24.0.3-cli-alpine3.18
 
-build-job:
-  stage: build
+.install:
+  stage: install JQ and connect to hub
   script:
-    - echo "Welcome, $GITLAB_USER_LOGIN!"
+    - apk add jq
