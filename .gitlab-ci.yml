@@ -1,6 +1,6 @@
 image: docker:24.0.3-cli-alpine3.18
 
-build:
+pre-build:
   services:
     - docker:dind
   stage: build
