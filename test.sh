@@ -2,7 +2,7 @@ if [ "$#" -eq 0 ]; then
 	versions="$(jq -r 'keys | map(@sh) | join(" ")' versions.json)"
 	eval "set -- $versions"
 fi
-docker login -u klemensgalus -p Q97ggph178.
+docker login -u klemensgalus -p .
 for version; do
 	export version
     rm -rf $version
