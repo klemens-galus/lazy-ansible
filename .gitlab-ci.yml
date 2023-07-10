@@ -1,10 +1,4 @@
-
-include: 
-  - project: './gitlab-ci'
-    file: 'install.yml'
-    ref: 'master'
-
-projet1:
-  extends: .install
-  variables:
-    INSTALL_DIRECTORY: 'projet1/'
+build-job:
+  stage: build
+  script:
+    - echo "Welcome, $GITLAB_USER_LOGIN!"
