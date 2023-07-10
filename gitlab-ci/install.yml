@@ -1,0 +1,5 @@
+.install:
+  variables:
+    INSTALL_DIRECTORY: '.'
+  script:
+    - cd $INSTALL_DIRECTORY

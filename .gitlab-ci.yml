@@ -1,0 +1,10 @@
+
+include: 
+  - project: './gitlab-ci'
+    file: 'install.yml'
+    ref: 'master'
+
+projet1:
+  extends: .install
+  variables:
+    INSTALL_DIRECTORY: 'projet1/'
