@@ -1,6 +1,6 @@
 image: docker:24.0.3-cli-alpine3.18
 
-install:
+build:
   stage: install JQ and connect to hub
   script:
     - apk add jq
