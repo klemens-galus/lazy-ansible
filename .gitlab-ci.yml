@@ -6,6 +6,7 @@ image: docker:24.0.3-cli-alpine3.18
   stage: build
   script:
     - apk add jq
+    - apk add bash
     - docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
 
 
