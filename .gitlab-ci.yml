@@ -4,4 +4,4 @@ build:
   stage: build
   script:
     - apk add jq
-    - winpty docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD docker.io
+    - docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD docker.io
