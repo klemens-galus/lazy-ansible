@@ -4,4 +4,4 @@ build:
   stage: build
   script:
     - apk add jq
-    - docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD --password-stdin
+    - docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
