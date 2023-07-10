@@ -1,10 +1,18 @@
 image: docker:24.0.3-cli-alpine3.18
 
-pre-build:
+.pre-build:
   services:
     - docker:dind
   stage: build
   script:
     - apk add jq
     - docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
+
+
+build:
+  services:
+    - docker:dind
+  stage: build
+  script:
+    - bash test.sh
 
