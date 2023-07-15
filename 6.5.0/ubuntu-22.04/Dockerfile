@@ -1,0 +1,48 @@
+ARG variant
+
+FROM ubuntu:$variant
+
+#CREATE THE USER ANSIBLE W/ PASSWORD
+RUN adduser --disabled-password \
+--gecos '' ansible
+
+ARG ANSIBLE_VERSION 
+
+RUN apt update && \
+    apt install -y python3 && \
+    apt install -y curl
+RUN cd /home/ansible && \
+    runuser ansible -c "curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py" && \
+    runuser ansible -c "python3 get-pip.py --user" && \
+    runuser ansible -c "python3 -m pip install --user ansible=="$ANSIBLE_VERSION && \
+    mv /home/ansible/.local/bin/ansible /usr/local/bin
+RUN apt-get -y install sudo
+
+
+
+RUN adduser ansible sudo
+
+#CREATE THE USER ANSIBLE TO THE SUDOER W/ PASSWORD
+RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> \
+/etc/sudoers
+
+RUN mkdir /home/ansible/.ssh
+
+VOLUME /home/ansible/
+VOLUME /home/ansible/.ssh
+
+
+COPY ./docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+
+#SOMETIME SOMES '\r' NEED TO BE REMOVED 
+RUN sed -i 's/\r$//' /usr/local/bin/docker-entrypoint.sh
+
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+USER ansible
+
+ENTRYPOINT ["docker-entrypoint.sh"]
+
+CMD ["bash"]
+
+

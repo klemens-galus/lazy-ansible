@@ -14,12 +14,12 @@ for version; do
 
         cp Dockerfile.ubuntu.template $version/ubuntu-$variantsUbuntu/Dockerfile
         cp ubuntu-docker-entrypoint.sh $version/ubuntu-$variantsUbuntu/docker-entrypoint.sh
-        docker build  -t klemensgalus/lazy-ansible:$version-ubuntu$variantsUbuntu \
-            --build-arg ANSIBLE_VERSION=$version \
-            --build-arg variant=$variantsUbuntu \
-            -f ./$version/ubuntu-$variantsUbuntu/Dockerfile ./$version/ubuntu-$variantsUbuntu
+        # docker build  -t klemensgalus/lazy-ansible:$version-ubuntu$variantsUbuntu \
+        #     --build-arg ANSIBLE_VERSION=$version \
+        #     --build-arg variant=$variantsUbuntu \
+        #     -f ./$version/ubuntu-$variantsUbuntu/Dockerfile ./$version/ubuntu-$variantsUbuntu
         
-        docker push klemensgalus/lazy-ansible:$version-ubuntu$variantsUbuntu 
+        # docker push klemensgalus/lazy-ansible:$version-ubuntu$variantsUbuntu 
     done
     variantsAlpine="$(jq -r '.[env.version].alpine' versions.json)"
     for variantsAlpine in "${variantsAlpine[@]}"; do
@@ -28,12 +28,12 @@ for version; do
 
         cp Dockerfile.alpine.template $version/alpine-$variantsAlpine/Dockerfile
         cp alpine-docker-entrypoint.sh $version/alpine-$variantsAlpine/docker-entrypoint.sh
-        docker build -t klemensgalus/lazy-ansible:$version-alpine$variantsAlpine \
-            --build-arg ANSIBLE_VERSION=$version \
-            --build-arg variant=$variantsAlpine \
-            -f ./$version/alpine-$variantsAlpine/Dockerfile ./$version/alpine-$variantsAlpine
+        # docker build -t klemensgalus/lazy-ansible:$version-alpine$variantsAlpine \
+        #     --build-arg ANSIBLE_VERSION=$version \
+        #     --build-arg variant=$variantsAlpine \
+        #     -f ./$version/alpine-$variantsAlpine/Dockerfile ./$version/alpine-$variantsAlpine
         
-        docker push klemensgalus/lazy-ansible:$version-alpine$variantsAlpine 
+        # docker push klemensgalus/lazy-ansible:$version-alpine$variantsAlpine 
     done
 done
 
