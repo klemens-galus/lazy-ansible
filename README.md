@@ -3,7 +3,7 @@
 ## Quick reference
 
 -   **Maintained by**  
-    [Me : Klemens](https://gitlab.com/Klemens_Galus)
+    [Me : Klemens](https://gitlab.com/Klemens_Galus)  
 You need a ssh folder with your ssh key.s ans a config file 
 
 ## Supported release tags  
