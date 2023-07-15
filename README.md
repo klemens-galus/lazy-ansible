@@ -6,10 +6,23 @@
     [Me : Klemens](https://gitlab.com/Klemens_Galus)
 You need a ssh folder with your ssh key.s ans a config file 
 
+```
+```
+
 ## Supported release tags  
-- [1.0.4](https://github.com/klemens-galus/lazy-ansible/tree/1.0.4)
-- [1.0.3](https://github.com/klemens-galus/lazy-ansible/tree/1.0.3)
-- [1.0.2](https://github.com/klemens-galus/lazy-ansible/tree/1.0.2)
+- [`8.1.0-alpine3.18.2`](), [`8.1.0-ubuntu22.04`]()  
+- [`7.7.0-alpine3.18.2`](), [`7.7.0-ubuntu22.04`]()  
+- [`7.6.0-alpine3.18.2`](), [`7.6.0-ubuntu22.04`]()  
+- [`7.5.0-alpine3.18.2`](), [`7.5.0-ubuntu22.04`]()  
+- [`7.0.0-alpine3.18.2`](), [`7.0.0-ubuntu22.04`]()  
+- [`6.7.0-alpine3.18.2`](), [`6.7.0-ubuntu22.04`]()  
+- [`6.6.0-alpine3.18.2`](), [`6.6.0-ubuntu22.04`]()  
+- [`6.5.0-alpine3.18.2`](), [`6.5.0-ubuntu22.04`]()  
+- [`6.4.0-alpine3.18.2`](), [`6.4.0-ubuntu22.04`]()  
+- [`6.3.0-alpine3.18.2`](), [`6.3.0-ubuntu22.04`]()  
+- [`6.2.0-alpine3.18.2`](), [`6.2.0-ubuntu22.04`]()  
+- [`6.1.0-alpine3.18.2`](), [`6.1.0-ubuntu22.04`]()  
+- [`6.0.0-alpine3.18.2`](), [`6.0.0-ubuntu22.04`]() 
 
 
 ## Supported beta tags
