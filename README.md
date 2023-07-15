@@ -6,23 +6,20 @@
     [Me : Klemens](https://gitlab.com/Klemens_Galus)
 You need a ssh folder with your ssh key.s ans a config file 
 
-```
-```
-
 ## Supported release tags  
-- [`8.1.0-alpine3.18.2`](), [`8.1.0-ubuntu22.04`]()  
-- [`7.7.0-alpine3.18.2`](), [`7.7.0-ubuntu22.04`]()  
-- [`7.6.0-alpine3.18.2`](), [`7.6.0-ubuntu22.04`]()  
-- [`7.5.0-alpine3.18.2`](), [`7.5.0-ubuntu22.04`]()  
-- [`7.0.0-alpine3.18.2`](), [`7.0.0-ubuntu22.04`]()  
-- [`6.7.0-alpine3.18.2`](), [`6.7.0-ubuntu22.04`]()  
-- [`6.6.0-alpine3.18.2`](), [`6.6.0-ubuntu22.04`]()  
-- [`6.5.0-alpine3.18.2`](), [`6.5.0-ubuntu22.04`]()  
-- [`6.4.0-alpine3.18.2`](), [`6.4.0-ubuntu22.04`]()  
-- [`6.3.0-alpine3.18.2`](), [`6.3.0-ubuntu22.04`]()  
-- [`6.2.0-alpine3.18.2`](), [`6.2.0-ubuntu22.04`]()  
-- [`6.1.0-alpine3.18.2`](), [`6.1.0-ubuntu22.04`]()  
-- [`6.0.0-alpine3.18.2`](), [`6.0.0-ubuntu22.04`]() 
+- [`8.1.0-alpine3.18.2`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/8.1.0/alpine-3.18.2/Dockerfile), [`8.1.0-ubuntu22.04`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/8.1.0/ubuntu-22.04/Dockerfile)  
+- [`7.7.0-alpine3.18.2`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/7.7.0/alpine-3.18.2/Dockerfile), [`7.7.0-ubuntu22.04`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/7.7.0/ubuntu-22.04/Dockerfile)  
+- [`7.6.0-alpine3.18.2`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/7.6.0/alpine-3.18.2/Dockerfile), [`7.6.0-ubuntu22.04`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/7.6.0/ubuntu-22.04/Dockerfile)  
+- [`7.5.0-alpine3.18.2`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/7.5.0/alpine-3.18.2/Dockerfile), [`7.5.0-ubuntu22.04`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/7.5.0/ubuntu-22.04/Dockerfile)  
+- [`7.0.0-alpine3.18.2`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/7.0.0/alpine-3.18.2/Dockerfile), [`7.0.0-ubuntu22.04`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/7.0.0/ubuntu-22.04/Dockerfile)  
+- [`6.7.0-alpine3.18.2`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.7.0/alpine-3.18.2/Dockerfile), [`6.7.0-ubuntu22.04`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.7.0/ubuntu-22.04/Dockerfile)  
+- [`6.6.0-alpine3.18.2`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.6.0/alpine-3.18.2/Dockerfile), [`6.6.0-ubuntu22.04`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.6.0/ubuntu-22.04/Dockerfile)  
+- [`6.5.0-alpine3.18.2`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.5.0/alpine-3.18.2/Dockerfile), [`6.5.0-ubuntu22.04`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.5.0/ubuntu-22.04/Dockerfile)  
+- [`6.4.0-alpine3.18.2`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.4.0/alpine-3.18.2/Dockerfile), [`6.4.0-ubuntu22.04`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.4.0/ubuntu-22.04/Dockerfile)  
+- [`6.3.0-alpine3.18.2`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.3.0/alpine-3.18.2/Dockerfile), [`6.3.0-ubuntu22.04`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.3.0/ubuntu-22.04/Dockerfile)  
+- [`6.2.0-alpine3.18.2`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.2.0/alpine-3.18.2/Dockerfile), [`6.2.0-ubuntu22.04`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.2.0/ubuntu-22.04/Dockerfile)  
+- [`6.1.0-alpine3.18.2`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.1.0/alpine-3.18.2/Dockerfile), [`6.1.0-ubuntu22.04`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.1.0/ubuntu-22.04/Dockerfile)  
+- [`6.0.0-alpine3.18.2`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.0.0/alpine-3.18.2/Dockerfile), [`6.0.0-ubuntu22.04`](https://gitlab.com/lazy-devops/lazy-ansible/-/tree/ansibleV/6.0.0/ubuntu-22.04/Dockerfile) 
 
 
 ## Supported beta tags
