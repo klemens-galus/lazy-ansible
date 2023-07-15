@@ -55,3 +55,10 @@ Host *
 ```
 
 You need to respect the `~/.ssh/`
+
+
+https://gitlab.com/lazy-devops/lazy-ansible/badges/master/pipeline.svg
+
+ CI STATUS |
+|:-:|
+| ![amd64 build status badge](https://gitlab.com/lazy-devops/lazy-ansible/badges/master/pipeline.svg) 
