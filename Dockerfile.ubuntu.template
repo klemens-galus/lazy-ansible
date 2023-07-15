@@ -1,12 +1,24 @@
-FROM ubuntu:22.04
+ARG variant
 
-RUN apt update && \
-    apt install -y ansible && \
-    apt-get -y install sudo
+FROM ubuntu:$variant
 
 #CREATE THE USER ANSIBLE W/ PASSWORD
 RUN adduser --disabled-password \
 --gecos '' ansible
+
+ARG ANSIBLE_VERSION 
+
+RUN apt update && \
+    apt install -y python3 && \
+    apt install -y curl
+RUN cd /home/ansible && \
+    runuser ansible -c "curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py" && \
+    runuser ansible -c "python3 get-pip.py --user" && \
+    runuser ansible -c "python3 -m pip install --user ansible=="$ANSIBLE_VERSION && \
+    mv /home/ansible/.local/bin/ansible /usr/local/bin
+RUN apt-get -y install sudo
+
+
 
 RUN adduser ansible sudo
 
