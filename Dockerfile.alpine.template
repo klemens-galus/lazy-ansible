@@ -18,6 +18,8 @@ RUN cd /home/ansible && \
     su -c "python3 -m pip install --user ansible==$ANSIBLE_VERSION" ansible && \
     mv /home/ansible/.local/bin/ansible /usr/local/bin
 
+RUN apk add ansible
+
 # CREATE THE USER ANSIBLE TO THE SUDOER W/ PASSWORD
 RUN echo 'ansible ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
