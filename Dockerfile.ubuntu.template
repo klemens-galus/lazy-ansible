@@ -18,7 +18,7 @@ RUN cd /home/ansible && \
     mv /home/ansible/.local/bin/ansible /usr/local/bin
 RUN apt-get -y install sudo
 
-RUN apt-get install ansible
+RUN apt-get -y install ansible
 
 
 
