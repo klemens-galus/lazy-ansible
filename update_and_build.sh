@@ -19,6 +19,7 @@ for version; do
             -f ./$version/ubuntu-$variantsUbuntu/Dockerfile ./$version/ubuntu-$variantsUbuntu
         
         docker push klemensgalus/lazy-ansible:$version-ubuntu$variantsUbuntu 
+        docker rmi klemensgalus/lazy-ansible:$version-ubuntu$variantsUbuntu 
     done
     variantsAlpine="$(jq -r '.[env.version].alpine' versions.json)"
     for variantsAlpine in "${variantsAlpine[@]}"; do
@@ -33,6 +34,7 @@ for version; do
             -f ./$version/alpine-$variantsAlpine/Dockerfile ./$version/alpine-$variantsAlpine
         
         docker push klemensgalus/lazy-ansible:$version-alpine$variantsAlpine 
+        docker rmi klemensgalus/lazy-ansible:$version-alpine$variantsAlpine 
     done
 done
 
